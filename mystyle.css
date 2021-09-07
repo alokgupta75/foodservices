@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Ubuntu:ital,wght@1,300&display=swap');
+/* css reset */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+/* navigarion bar */
+nav ul li{
+    list-style: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+nav{
+    display: flex;
+    align-items: center; 
+    width: 100vw;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+#navbar{
+    position: relative;
+    top: 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+    background-color: black;
+    color: rgb(223, 18, 18);
+}
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+}
+.item-list{
+    display: flex;
+}
+.items{
+    margin: 0 15px;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 500px;
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    /* border: rgb(153, 30, 30) solid 5px; */ 
+}
+
+.h-primary{
+    font-size: 2rem;
+    color: white;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.btn{
+    font-size: 1.3rem;
+    border: 2px solid white ;
+    border-radius: 5px;
+    margin: 30px;
+    background-color: tomato;
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+/* utilites classes */
+.h-primary-center{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.h-secondary{font-size: 1.8rem;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+/* services */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+/* .services-container {
+    height: 67px;
+} */
+#services .box{
+    border: rgb(243, 243, 243) solid ;
+    height: 257px;
+    padding: 34px;
+    margin: 12px;
+    border-radius: 23px;
+    background-color: azure;
+     
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+/* .services-container{
+    padding-top: 100px;
+} */
+/* clients section */
+#client{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    width: 115px;
+    padding: 22px;
+}
+#client::before{
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 318px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    /* border: rgb(153, 30, 30) solid 5px; */  
+}
+/* Contact section */
+#contact{
+    padding-top: 80px;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('bg3.jfif') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea{
+    border-radius: 7px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.3rem;
+}
+.contact-form form{
+    width: 40%;
+}
+.contact-form label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
